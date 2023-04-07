@@ -9,8 +9,9 @@
             "type": "python",
             "request": "launch",
             "module": "flask",
+            "cwd": "${workspaceFolder}/src/api",
             "env": {
-                "FLASK_APP": "src.api.app:app",
+                "FLASK_APP": "app:app",
                 "FLASK_DEBUG": "1"
             },
             "args": [

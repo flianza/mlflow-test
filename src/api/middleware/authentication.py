@@ -19,7 +19,7 @@ class BasicAuthetication:
                 mimetype="application/json",
             )(environ, start_response)
 
-        if secret_key != os.environ["SECRET_KEY"]:
+        if secret_key != os.environ["API_APP_KEY"]:
             return Response(
                 json.dumps({"error": "Invalid token"}),
                 status=403,
