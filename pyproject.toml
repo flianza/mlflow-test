@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "mlflow-test"
+version = "0.1.0"
+description = ""
+authors = ["Franco Lianza <lianza.fl@gmail.com>"]
+readme = "README.md"
+packages = [{include = "mlflow_test"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+jupyter = "^1.0.0"
+mlflow = "^2.2.2"
+scikit-learn = "^1.2.2"
+boto3 = "^1.26.108"
+pandas = "^2.0.0"
+flask = "^2.2.3"
+python-dotenv = "^1.0.0"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
